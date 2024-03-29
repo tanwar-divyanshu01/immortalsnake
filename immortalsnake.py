@@ -29,13 +29,12 @@ class Snake:
 class Food:
     def __init__(self):
         x = random.randint(0, (GAME_WIDTH//SPACE_SIZE)-1) * SPACE_SIZE
-        # UNLOCK THE INFINITE SNAKE EATER BY UNCOMMENTING THE FOLLOWING CODE and COMMETING THE X AND Y LINE
+        y = random.randint(0, (GAME_HEIGHT//SPACE_SIZE)-1) * SPACE_SIZE
+        # UNLOCK THE INFINITE SNAKE EATER BY UNCOMMENTING THE FOLLOWING CODE and COMMETING THE X AND Y LINES ABOVE
         # global AXE
         # garb, AXE = divmod(AXE+1,(GAME_WIDTH//SPACE_SIZE)-1)
         # x = AXE * SPACE_SIZE
         # y = 5*SPACE_SIZE
-        y = random.randint(0, (GAME_HEIGHT//SPACE_SIZE)-1) * SPACE_SIZE
-        
 
         self.coordinates = [x, y]
 
